@@ -35,16 +35,9 @@ def generate_report(data):
     return json.dumps(report, ensure_ascii=False)
 
 
-# Основная функция
-def main():
-    # Загружаем данные из файла JSON
-    input_data = load_data("format.json")
-    # Генерируем отчет
-    report = generate_report(input_data)
-    # Выводим отчет
-    print(report)
-
-
-# Точка входа в программу
-if __name__ == "__main__":
-    main()
+# Загружаем данные из файла JSON
+input_data = load_data("format.json")
+# Генерируем отчет
+report = generate_report(input_data)
+# Выводим отчет
+print(report)
