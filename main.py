@@ -36,7 +36,7 @@ def generate_report(data):
 
 
 # Загружаем данные из файла JSON
-input_data = load_data("format.json")
+input_data = load_data("input.json")
 # Генерируем отчет
 report = generate_report(input_data)
 # Выводим отчет
